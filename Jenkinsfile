@@ -4,15 +4,9 @@ pipeline {
 
     stages {
 
-        stage('Stage 1') {
+        stage('Run Script') {
             steps {
-                echo "Hello"
-            }
-        }
-
-        stage('Stage 2') {
-            steps {
-                echo "Welcome to Jenkins"
+                sh './scripts/hello.sh'
             }
         }
 

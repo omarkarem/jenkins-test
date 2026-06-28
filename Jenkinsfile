@@ -6,7 +6,7 @@ pipeline {
 
         stage('Run Script') {
             steps {
-                sh './scripts/hello.sh'
+                sh './hello.sh'
             }
         }
 
